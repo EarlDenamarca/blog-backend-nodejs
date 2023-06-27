@@ -1,0 +1,20 @@
+{
+  "name": "blog-backend-nodejs",
+  "version": "1.0.0",
+  "description": "backend service for a blog site using nodejs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev" : "nodemon index.js"
+  },
+  "author": "Earl Denamarca",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
