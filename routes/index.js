@@ -1,8 +1,9 @@
 const express = require( 'express' )
 const router = express.Router()
+const PostController = require( '../controllers/PostController' )
 
-router.get( '/api/posts', ( req, res ) => {
-    res.status( 200 ).json({ 'message' : 'Get Posts' });
-} );
+const postController = new PostController();
+
+router.get( '/api/posts', postController.index);
 
 module.exports = router
